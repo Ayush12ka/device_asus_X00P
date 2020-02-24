@@ -457,3 +457,5 @@ PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
 
 # Inherit common proprietary files
 $(call inherit-product-if-exists, vendor/asus/X00P/X00P-vendor.mk)
+
+PRODUCT_VENDOR_KERNEL_HEADERS := $(LOCAL_PATH)/kernel-headers
