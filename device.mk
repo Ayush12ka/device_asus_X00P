@@ -15,6 +15,15 @@
 # limitations under the License.
 #
 
+LOCAL_PATH := device/asus/X00P
+
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH) \
+    hardware/qcom/display-caf-msm8996 \
+    hardware/qcom/audio-caf-msm8996 \
+    hardware/qcom/media-caf-msm8996
+
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
