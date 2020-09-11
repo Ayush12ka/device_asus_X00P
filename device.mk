@@ -152,7 +152,10 @@ PRODUCT_PACKAGES += \
     libqdMetaData.system \
     libtinyxml \
     libvulkan \
-    memtrack.msm8937
+    memtrack.msm8937 \
+    libhwbinder.vendor \
+    libhwbinder
+
 
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
