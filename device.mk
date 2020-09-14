@@ -458,8 +458,8 @@ PRODUCT_BOOT_JARS += \
 
 
 # Zenparts    
-PRODUCT_PACKAGES += \
-    ZenParts 
+#PRODUCT_PACKAGES += \
+#    ZenParts 
 
 # Reduce system image size by limiting java debug info.
 PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
