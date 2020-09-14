@@ -45,11 +45,6 @@ $(DSP_MOUNT_POINT):
 	@echo "Creating $(DSP_MOUNT_POINT)"
 	@mkdir -p $(TARGET_OUT_VENDOR)/dsp
 
-$(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr: $(wildcard $(PRODUCT_VENDOR_KERNEL_HEADERS)/*)
-	rm -rf $@
-	mkdir -p $@/include
-	cp -a $(PRODUCT_VENDOR_KERNEL_HEADERS)/. $@/include
-
 ALL_DEFAULT_INSTALLED_MODULES += $(FIRMWARE_MOUNT_POINT) $(DSP_MOUNT_POINT)
 
 LOCAL_MODULE := wifi_symlinks
